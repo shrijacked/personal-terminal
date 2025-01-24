@@ -118,9 +118,7 @@ export const useTerminal = () => {
       <br/>
       ↑/↓ - Browse command history
       <br/>
-      Tab - Command auto-completion
-      <br/>
-      Ctrl+L - Clear screen`,
+      `,
 
     about: () => `<div class="space-y-4">
       <p class="text-xl font-bold text-green-400">👋 Hello, World!</p>

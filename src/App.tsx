@@ -38,7 +38,7 @@ function App() {
             </div>
             <div className="flex items-center space-x-2 text-gray-300">
               <Monitor size={16} />
-              <span className="text-sm">guest@portfolio ~ </span>
+              <span className="text-sm">guest@shrijak's_portfolio ~ </span>
             </div>
             <div className="w-4"></div>
           </div>
