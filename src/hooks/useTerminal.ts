@@ -331,7 +331,9 @@ export const useTerminal = () => {
 
     if (cmd in commands) {
       const result = (commands[cmd as keyof typeof commands] as any)(args);
-      if (result) {
+      if (cmd === 'clear') {
+        setOutput([]);
+      } else if (result) {
         newOutput.push({ type: 'output', content: result });
       }
     } else if (cmd === 'project' && args[0]) {
@@ -365,7 +367,9 @@ export const useTerminal = () => {
       });
     }
 
-    setOutput(newOutput);
+    if (cmd !== 'clear') {
+      setOutput(newOutput);
+    }
     setHistory([...history, currentCommand]);
     setHistoryIndex(-1);
     setCurrentCommand('');
