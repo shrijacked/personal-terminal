@@ -231,13 +231,13 @@ export const useTerminal = () => {
     </div>`,
 
     contact: () => `<div class="space-y-4">
-      <p class="text-xl font-bold text-green-400">📬 Let's Connect!</p>
+      <p class="text-xl font-bold text-green-400">🤝 How about we join forces?</p>
       <br/>
       <div class="space-y-2">
-        <p>📧 <span class="text-blue-400">email@example.com</span></p>
-        <p>🐙 <a href="https://github.com/username" class="text-blue-400">github.com/username</a></p>
-        <p>💼 <a href="https://linkedin.com/in/username" class="text-blue-400">linkedin.com/in/username</a></p>
-        <p>🌐 <a href="https://portfolio.dev" class="text-blue-400">portfolio.dev</a></p>
+        <p>📧 <span class="text-blue-400">shrijakkumar@gmail.com</span></p>
+        <p>🐙 <a href="https://github.com/shrijacked" class="text-blue-400">github.com/shrijacked</a></p>
+        <p>💼 <a href="https://www.linkedin.com/in/shrijakkumar/" class="text-blue-400">linkedin.com/in/shrijakkumar</a></p>
+        <p>𝕏 <a href="https://x.com/shrijacked" class="text-blue-400">x.com/shrijacked</a></p>
       </div>
       <br/>
       <p class="text-gray-400">Feel free to reach out for collaborations or opportunities!</p>
