@@ -238,6 +238,8 @@ export const useTerminal = () => {
         <p>🐙 <a href="https://github.com/shrijacked" class="text-blue-400">github.com/shrijacked</a></p>
         <p>💼 <a href="https://www.linkedin.com/in/shrijakkumar/" class="text-blue-400">linkedin.com/in/shrijakkumar</a></p>
         <p>𝕏 <a href="https://x.com/shrijacked" class="text-blue-400">x.com/shrijacked</a></p>
+        <p>👾 <a href="https://discord.com/users/822451644104048700" class="text-blue-400">Discord</a></p>
+        
       </div>
       <br/>
       <p class="text-gray-400">Feel free to reach out for collaborations or opportunities!</p>
