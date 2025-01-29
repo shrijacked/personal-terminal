@@ -20,29 +20,59 @@ export const useTerminal = () => {
   const [output, setOutput] = useState<OutputLine[]>([{
     type: 'ascii',
     content: `
-    Welcome to my interactive portfolio! Type 'help' to see available commands.
+    Step into my digital realm. Type 'help' to launch the experience.
     `
   }]);
 
   const projects: Project[] = [
+    
     {
-      name: "E-Commerce Platform",
-      description: "Full-stack marketplace with real-time inventory and payments",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      link: "https://github.com/username/ecommerce"
+      name: "AudioMOS",
+      description: "AudioMOS is a cutting-edge platform for audio processing, enabling seamless Text-to-Speech (TTS), Speech-to-Text (STT), and Voice Cloning functionalities. Built on the Akash Network, it provides both API access and a web dashboard for real-time and batch audio processing. Features include multi-language support, real-time synthesis, accurate transcription, and high-fidelity voice cloning. Additionally, it offers advanced audio enhancement tools such as noise reduction and format conversion.",
+      tech: [
+        "FastAPI", 
+        "PyTorch",
+        "Docker",
+        "MongoDB",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Akash Network",
+        "Docker"
+      ],
+      link: "https://github.com/shrijacked/audiomos.git"
     },
     {
-      name: "AI Chat Application",
-      description: "Real-time chat with AI-powered responses",
-      tech: ["Next.js", "OpenAI", "WebSocket", "Redis"],
-      link: "https://github.com/username/ai-chat"
+      name: "WatchDawg",
+      description: "WatchDawg is an AI-powered security surveillance system that utilizes computer vision for real-time trespasser detection. Built with YOLOv5, it identifies unauthorized individuals and sends automated email alerts. The system also generates heatmaps for activity visualization, records video footage, and maintains logs for security analysis.",
+      tech: [
+        "YOLOv5",
+        "Python",
+        "OpenCV"
+      ],
+      link: "https://github.com/shrijacked/WatchDawg.git"
     },
     {
-      name: "Mobile Social App",
-      description: "Cross-platform social media application",
-      tech: ["React Native", "Firebase", "Redux", "TypeScript"],
-      link: "https://github.com/username/social-app"
-    }
+      name: "Shrijak's Terminal",
+      description: "Web-based interactive terminal simulating a command-line interface to explore projects, skills, and achievements through text commands.",
+      tech: [
+        "React", 
+        "TypeScript",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      link: "https://github.com/shrijacked/terminal"
+    },
+    {
+      name: "GesturePilot",
+      description: "AI-powered hand gesture recognition system enabling touch-free presentation control through real-time landmark detection. Supports slide navigation, pointer control, and interaction via hand gestures without physical devices.",
+      tech: [
+        "OpenCV",
+        "Mediapipe",
+        "NumPy",
+      ]
+    },
+    
   ];
 
   const handleHistory = useCallback((direction: 'up' | 'down') => {
@@ -116,19 +146,21 @@ export const useTerminal = () => {
       <br/>
       `,
 
-    about: () => `<div class="space-y-4">
+      about: () => `<div class="space-y-4">
       <p class="text-xl font-bold text-green-400">👋 Hello, World!</p>
-      <p>I'm a passionate Full Stack Developer with a love for creating elegant solutions to complex problems.</p>
+      <p>Hi, I’m Shrijak. I’m a 2nd-year Computer Science & AI student at Plaksha University, someone who once dreamed of being a fighter pilot but ended up navigating a different kind of frontier—one driven by curiosity, logic, and the power of AI. Along the way, I realized that understanding how knowledge is structured, discovered, and expanded is key to pushing human potential forward. AI isn’t just about automating tasks; it’s about enhancing human intelligence, accelerating breakthroughs, and opening new possibilities.</p>
       <br/>
-      <p class="text-yellow-400">🚀 Quick Overview:</p>
-      <ul class="list-disc list-inside space-y-2">
-        <li>🎯 Specialized in modern web technologies</li>
-        <li>💡 5+ years of professional experience</li>
-        <li>🌱 Continuous learner and tech enthusiast</li>
-        <li>🤝 Open source contributor</li>
-      </ul>
+      <p>These ideas come to life where AI, mathematics, and real-world impact intersect. From building AudioMOS—an open-source AI audio processing platform (Winner, Akashathon 3 - $5,000)—to developing GesturePilot, a hands-free presentation control system powered by Computer Vision, I’m driven by the challenge of making technology accessible and transformative.</p>
       <br/>
-    </div>`,
+      <p>Beyond these, I’m a national athlete, marathon runner, and an aspiring Ironman competitor—pushing limits, both physically and intellectually.</p>
+      <br/>
+      <p>I also find beauty in the logic of nature—the hexagonal perfection of a beehive, the organized chaos of ant colonies, the golden ratio shaping the world around us. And there’s something grounding about the smell of food cooking, a reminder that some of the best things in life are simple and meant to be shared.</p>
+      <br/>
+      <p>To me, technology is a tool—a way to uncover hidden patterns, tackle humanity’s biggest challenges, and build solutions that last.</p>
+      <br/>
+      <p>Let’s connect and create something remarkable.</p>
+    </div>`
+    ,
 
     skills: () => `<div class="space-y-4">
   <p class="text-xl font-bold text-green-400">🛠 Technical Skills</p>
@@ -210,7 +242,7 @@ export const useTerminal = () => {
         
       </div>
       <br/>
-      <p class="text-gray-400">Feel free to reach out for collaborations or opportunities!</p>
+      <p class="text-gray-400">Ping me to transform ‘What if?’ into ‘What’s next!’</p>
     </div>`,
 
     achievements: () => `<div class="space-y-4">
@@ -218,11 +250,11 @@ export const useTerminal = () => {
       <br/>
       <div class="space-y-6">
         <div>
-          <p class="text-yellow-400">Achievements</p>
+          <p class="text-yellow-400">Awards</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
             <li>
               <span class="font-semibold">AudioMOS – Akashathon 3: OpenSource AI (1st Place)</span><br/>
-              Developed an open-source platform for advanced audio processing models, including Text-to-Speech and Speech-to-Text. Deployed solutions on the Akash Network using GPU instances, ensuring high performance and scalability. Integrated a seamless web dashboard and API access, allowing users to process audio efficiently. Recognized for technical excellence and awarded $5,000 for outstanding innovation in the hackathon.
+              Developed an open-source platform for advanced audio processing models, including Text-to-Speech, Speech-to-Text, Voice Cloning and Voice Cleaning. Deployed solutions on the Akash Network using GPU instances, ensuring high performance and scalability. Integrated a seamless web dashboard and API access, allowing users to process audio efficiently. Recognized for technical excellence and awarded $5,000 for outstanding innovation in the hackathon.
             </li>
           </ul>
         </div>
