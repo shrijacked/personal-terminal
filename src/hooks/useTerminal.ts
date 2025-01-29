@@ -140,30 +140,59 @@ export const useTerminal = () => {
       <br/>
       <div class="space-y-6">
         <div>
-          <p class="text-yellow-400">Frontend Development:</p>
+          <p class="text-yellow-400">💻 Programming Languages:</p>
           <ul class="list-disc list-inside space-y-1">
-            <li>⚛️ React/Next.js Expert</li>
-            <li>📱 React Native</li>
-            <li>🔧 TypeScript</li>
-            <li>🎨 Tailwind CSS/SCSS</li>
+            <li>C/C++</li>
+            <li>Python</li>
+            <li>Rust</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
           </ul>
         </div>
         <div>
-          <p class="text-yellow-400">Backend Development:</p>
+          <p class="text-yellow-400"> 📦 Frameworks and Libraries: </p>
           <ul class="list-disc list-inside space-y-1">
-            <li>🚀 Node.js/Express</li>
-            <li>🐍 Python/Django</li>
-            <li>💾 PostgreSQL/MongoDB</li>
-            <li>☁️ AWS/GCP</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li> 
+            <li>Tailwind CSS</li>
+            <li>Seaborn</li>
+            <li>SciPy</li>
+            <li>Scikit-Learn</li>
+            <li>Pandas</li>
+            <li>OpenCV</li>
+            <li>NummPy</li>
+            <li>PyTorch</li>
+            <li>TensorFlow</li>
           </ul>
         </div>
         <div>
-          <p class="text-yellow-400">DevOps & Tools:</p>
+          <p class="text-yellow-400">🗄️ Databases:</p>
           <ul class="list-disc list-inside space-y-1">
-            <li>🐳 Docker/Kubernetes</li>
-            <li>🔄 CI/CD (GitHub Actions)</li>
-            <li>📊 Grafana/Prometheus</li>
-            <li>🔒 Security Best Practices</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-yellow-400">⚙️ Tools and Technologies:</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>HTML</li>
+            <li>Bash</li>
+            <li>MATLAB</li>
+            <li>UI/UX</li>
+            <li>Git/GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-yellow-400">🧠 Core Concepts</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Data Strictures and Algorithms</li>
+            <li>Linear Algebra</li>
+            <li>Probability</li>
+            <li>Statistics</li>
+            <li>Computational Optimization</li>
+            <li>Artificial Intelligence/Machine Learning</li>
+            <li>Data Science</li>
           </ul>
         </div>
       </div>
