@@ -8,7 +8,6 @@ Shrijak's Terminal is a web-based interactive terminal that simulates a command-
 - [Installation](#installation)
 - [Usage](#usage)
 - [Commands](#commands)
-- [Project Structure](#project-structure)
 - [License](#license)
 
 ---
