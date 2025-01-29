@@ -217,23 +217,24 @@ export const useTerminal = () => {
     </div>`,
 
     achievements: () => `<div class="space-y-4">
-      <p class="text-xl font-bold text-green-400">🏆 Achievements & Certifications</p>
+      <p class="text-xl font-bold text-green-400">🏆 Awards & Scholarships</p>
       <br/>
       <div class="space-y-6">
         <div>
-          <p class="text-yellow-400">Certifications</p>
+          <p class="text-yellow-400">Achievements</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li>AWS Certified Solutions Architect</li>
-            <li>Google Cloud Professional Developer</li>
-            <li>MongoDB Certified Developer</li>
+            <li>
+              <span class="font-semibold">AudioMOS – Akashathon 3: OpenSource AI (1st Place)</span><br/>
+              Developed an open-source platform for advanced audio processing models, including Text-to-Speech and Speech-to-Text. Deployed solutions on the Akash Network using GPU instances, ensuring high performance and scalability. Integrated a seamless web dashboard and API access, allowing users to process audio efficiently. Recognized for technical excellence and awarded $5,000 for outstanding innovation in the hackathon.
+            </li>
           </ul>
         </div>
         <div>
-          <p class="text-yellow-400">Awards</p>
+          <p class="text-yellow-400">Scholarships</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li>Best Innovation Award 2023</li>
-            <li>Hackathon Winner 2022</li>
-            <li>Open Source Contributor of the Year</li>
+            <li><span class="font-semibold">Bharti Scholar</span> – Awarded a prestigious full scholarship by the Bharti Airtel Foundation to support exceptional academic performance and leadership potential. Covers tuition, accommodation, and meals at Plaksha University.</li>
+            <li><span class="font-semibold">Reliance Foundation Scholar</span> – Selected for the highly competitive Reliance Foundation Undergraduate Scholarship, providing financial assistance of up to ₹2 lakhs INR for a four-year undergraduate program (2023-2027). Recognized for academic excellence and innovative potential.</li>
+            <li><span class="font-semibold">IAFBA Subroto Memorial Scholarship</span> – Conferred since 2021 under the prestigious scheme supporting meritorious wards of Indian Air Force personnel. Acknowledges consistent academic achievements and dedication to excellence.</li>
           </ul>
         </div>
       </div>
