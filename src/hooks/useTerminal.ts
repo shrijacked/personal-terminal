@@ -104,8 +104,6 @@ export const useTerminal = () => {
       <br/>
       <span class="text-yellow-400">achievements</span> - View my certifications and awards
       <br/>
-      <span class="text-yellow-400">blog</span>       - Read my latest blog posts
-      <br/>
       <span class="text-yellow-400">theme</span>      - Change terminal theme
       <br/>
       <span class="text-yellow-400">clear</span>      - Clear the terminal
@@ -240,22 +238,22 @@ export const useTerminal = () => {
       </div>
     </div>`,
 
-    blog: () => `<div class="space-y-4">
-      <p class="text-xl font-bold text-green-400">📝 Latest Blog Posts</p>
-      <br/>
-      <div class="space-y-4">
-        <div>
-          <p class="text-yellow-400">Mastering React Performance</p>
-          <p class="text-gray-400">Posted on March 15, 2024</p>
-          <p class="text-gray-300">Deep dive into React optimization techniques...</p>
-        </div>
-        <div>
-          <p class="text-yellow-400">The Future of Web Development</p>
-          <p class="text-gray-400">Posted on March 1, 2024</p>
-          <p class="text-gray-300">Exploring upcoming trends and technologies...</p>
-        </div>
-      </div>
-    </div>`,
+    // blog: () => `<div class="space-y-4">
+    //   <p class="text-xl font-bold text-green-400">📝 Latest Blog Posts</p>
+    //   <br/>
+    //   <div class="space-y-4">
+    //     <div>
+    //       <p class="text-yellow-400">Mastering React Performance</p>
+    //       <p class="text-gray-400">Posted on March 15, 2024</p>
+    //       <p class="text-gray-300">Deep dive into React optimization techniques...</p>
+    //     </div>
+    //     <div>
+    //       <p class="text-yellow-400">The Future of Web Development</p>
+    //       <p class="text-gray-400">Posted on March 1, 2024</p>
+    //       <p class="text-gray-300">Exploring upcoming trends and technologies...</p>
+    //     </div>
+    //   </div>
+    // </div>`,
 
     clear: () => {
       setOutput([]);
