@@ -50,7 +50,7 @@ function App() {
           >
             <div className="space-y-2">
               <div className={`${themes.text} animate-pulse`}>
-                Welcome to my interactive portfolio! Type 'help' to see available commands.
+              Step into my digital realm. Type 'help' to launch the experience.
               </div>
               {output.map((line, i) => (
                 <div key={i} className="space-y-1">

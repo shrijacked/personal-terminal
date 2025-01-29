@@ -128,7 +128,6 @@ export const useTerminal = () => {
         <li>🤝 Open source contributor</li>
       </ul>
       <br/>
-      <p class="text-gray-400">Type 'experience' or 'skills' to learn more about my professional journey.</p>
     </div>`,
 
     skills: () => `<div class="space-y-4">
