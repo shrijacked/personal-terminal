@@ -100,8 +100,6 @@ export const useTerminal = () => {
       <br/>
       <span class="text-yellow-400">contact</span>    - Get my contact information
       <br/>
-      <span class="text-yellow-400">experience</span> - View my work experience
-      <br/>
       <span class="text-yellow-400">education</span>  - View my educational background
       <br/>
       <span class="text-yellow-400">achievements</span> - View my certifications and awards
@@ -217,44 +215,38 @@ export const useTerminal = () => {
       </div>`;
     },
 
-    experience: () => `<div class="space-y-4">
-      <p class="text-xl font-bold text-green-400">💼 Work Experience</p>
-      <br/>
-      <div class="space-y-6">
-        <div>
-          <p class="text-yellow-400">Senior Full Stack Developer @ Tech Corp</p>
-          <p class="text-gray-400">2021 - Present</p>
-          <ul class="list-disc list-inside space-y-1 mt-2">
-            <li>Led development of microservices architecture</li>
-            <li>Improved system performance by 40%</li>
-            <li>Mentored junior developers</li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-yellow-400">Frontend Developer @ StartupX</p>
-          <p class="text-gray-400">2019 - 2021</p>
-          <ul class="list-disc list-inside space-y-1 mt-2">
-            <li>Built responsive web applications</li>
-            <li>Implemented CI/CD pipelines</li>
-            <li>Reduced load times by 60%</li>
-          </ul>
-        </div>
-      </div>
-    </div>`,
+    // experience: () => `<div class="space-y-4">
+    //   <p class="text-xl font-bold text-green-400">💼 Work Experience</p>
+    //   <br/>
+    //   <div class="space-y-6">
+    //     <div>
+    //       <p class="text-yellow-400">Senior Full Stack Developer @ Tech Corp</p>
+    //       <p class="text-gray-400">2021 - Present</p>
+    //       <ul class="list-disc list-inside space-y-1 mt-2">
+    //         <li>Led development of microservices architecture</li>
+    //         <li>Improved system performance by 40%</li>
+    //         <li>Mentored junior developers</li>
+    //       </ul>
+    //     </div>
+    //     <div>
+    //       <p class="text-yellow-400">Frontend Developer @ StartupX</p>
+    //       <p class="text-gray-400">2019 - 2021</p>
+    //       <ul class="list-disc list-inside space-y-1 mt-2">
+    //         <li>Built responsive web applications</li>
+    //         <li>Implemented CI/CD pipelines</li>
+    //         <li>Reduced load times by 60%</li>
+    //       </ul>
+    //     </div>
+    //   </div>
+    // </div>`,
 
     education: () => `<div class="space-y-4">
       <p class="text-xl font-bold text-green-400">🎓 Education</p>
-      <br/>
       <div class="space-y-6">
         <div>
-          <p class="text-yellow-400">Master's in Computer Science</p>
-          <p class="text-gray-400">University of Technology • 2018-2020</p>
-          <p class="text-gray-300">Specialization in Machine Learning</p>
-        </div>
-        <div>
-          <p class="text-yellow-400">Bachelor's in Software Engineering</p>
-          <p class="text-gray-400">Tech Institute • 2014-2018</p>
-          <p class="text-gray-300">First Class Honors</p>
+          <p class="text-yellow-400">Bachelor of Technology</p>
+          <p class="text-gray-400">Computer Science and Aritificial Intelligence</p>
+          <p class="text-gray-300">Plaksha University</p>
         </div>
       </div>
     </div>`,
