@@ -134,67 +134,17 @@ export const useTerminal = () => {
     </div>`,
 
     skills: () => `<div class="space-y-4">
-      <p class="text-xl font-bold text-green-400">🛠 Technical Skills</p>
-      <br/>
-      <div class="space-y-6">
-        <div>
-          <p class="text-yellow-400">💻 Programming Languages:</p>
-          <ul class="list-disc list-inside space-y-1">
-            <li>C/C++</li>
-            <li>Python</li>
-            <li>Rust</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-yellow-400"> 📦 Frameworks and Libraries: </p>
-          <ul class="list-disc list-inside space-y-1">
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Express.js</li> 
-            <li>Tailwind CSS</li>
-            <li>Seaborn</li>
-            <li>SciPy</li>
-            <li>Scikit-Learn</li>
-            <li>Pandas</li>
-            <li>OpenCV</li>
-            <li>NummPy</li>
-            <li>PyTorch</li>
-            <li>TensorFlow</li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-yellow-400">🗄️ Databases:</p>
-          <ul class="list-disc list-inside space-y-1">
-            <li>MongoDB</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-yellow-400">⚙️ Tools and Technologies:</p>
-          <ul class="list-disc list-inside space-y-1">
-            <li>HTML</li>
-            <li>Bash</li>
-            <li>MATLAB</li>
-            <li>UI/UX</li>
-            <li>Git/GitHub</li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-yellow-400">🧠 Core Concepts</p>
-          <ul class="list-disc list-inside space-y-1">
-            <li>Data Strictures and Algorithms</li>
-            <li>Linear Algebra</li>
-            <li>Probability</li>
-            <li>Statistics</li>
-            <li>Computational Optimization</li>
-            <li>Artificial Intelligence/Machine Learning</li>
-            <li>Data Science</li>
-          </ul>
-        </div>
-      </div>
-    </div>`,
+  <p class="text-xl font-bold text-green-400">🛠 Technical Skills</p>
+  <br/>
+  <div class="space-y-4">
+    <p class="text-yellow-400">💻 Programming Languages: <span class="text-white">C/C++, Python, Rust, JavaScript, TypeScript</span></p>
+    <p class="text-yellow-400">📦 Frameworks & Libraries: <span class="text-white">React.js, Node.js, Express.js, Tailwind CSS, Seaborn, SciPy, Scikit-Learn, Pandas, OpenCV, NumPy, PyTorch, TensorFlow</span></p>
+    <p class="text-yellow-400">🗄️ Databases: <span class="text-white">MongoDB, SQL</span></p>
+    <p class="text-yellow-400">⚙️ Tools & Technologies: <span class="text-white">HTML, Bash, MATLAB, UI/UX, Git/GitHub</span></p>
+    <p class="text-yellow-400">🧠 Core Concepts: <span class="text-white">Data Structures & Algorithms, Linear Algebra, Probability, Statistics, Computational Optimization, AI/ML, Data Science</span></p>
+  </div>
+</div>`
+,
 
     projects: () => {
       const projectList = projects.map((project, index) => `
