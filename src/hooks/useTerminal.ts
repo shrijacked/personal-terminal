@@ -156,9 +156,6 @@ export const useTerminal = () => {
       <br/>
       <p>I also find beauty in the logic of nature—the hexagonal perfection of a beehive, the organized chaos of ant colonies, the golden ratio shaping the world around us. And there’s something grounding about the smell of food cooking, a reminder that some of the best things in life are simple and meant to be shared.</p>
       <br/>
-      <p>To me, technology is a tool—a way to uncover hidden patterns, tackle humanity’s biggest challenges, and build solutions that last.</p>
-      <br/>
-      <p>Let’s connect and create something remarkable.</p>
     </div>`
     ,
 
