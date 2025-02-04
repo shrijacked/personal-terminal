@@ -61,7 +61,7 @@ export const useTerminal = () => {
         "Tailwind CSS",
         "JavaScript"
       ],
-      link: "https://github.com/shrijacked/terminal"
+      link: "https://github.com/shrijacked/personal-terminal.git"
     },
     {
       name: "GesturePilot",
