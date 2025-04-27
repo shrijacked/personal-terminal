@@ -29,8 +29,14 @@ function App() {
     <div className={`min-h-screen ${themes.bg} ${themes.text} flex items-center justify-center p-4 font-mono`}>
       <AnimatedBackground />
       <div className="w-full max-w-5xl" style={{ position: 'relative', zIndex: 1 }}>
-        <div className="bg-gray-800 rounded-lg shadow-xl border border-gray-700 overflow-hidden">
-          <div className="bg-gray-700 px-4 py-2 flex items-center justify-between">
+        <div
+          className="bg-gray-800 rounded-lg shadow-xl border border-gray-700 overflow-hidden"
+          style={{ background: 'rgba(30,30,30,0.7)' }}
+        >
+          <div
+            className="bg-gray-700 px-4 py-2 flex items-center justify-between"
+            style={{ background: 'rgba(45,45,45,0.7)' }}
+          >
             <div className="flex items-center space-x-2">
               <div className="flex space-x-2">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -45,10 +51,10 @@ function App() {
             <div className="w-4"></div>
           </div>
 
-          <div 
+          <div
             ref={terminalRef}
             className="p-4 h-[80vh] overflow-y-auto bg-gray-900 font-jetbrains"
-            style={{ scrollBehavior: 'smooth' }}
+            style={{ scrollBehavior: 'smooth', background: 'rgba(26,26,26,0.6)' }}
           >
             <div className="space-y-2">
               <div className={`${themes.text} animate-pulse`}>
@@ -63,7 +69,7 @@ function App() {
                     </div>
                   )}
                   {line.type === 'output' && (
-                    <div 
+                    <div
                       className="text-gray-300"
                       dangerouslySetInnerHTML={{ __html: line.content }}
                     />

@@ -1,24 +1,44 @@
 import React, { useRef, useEffect } from 'react';
 
-const STAR_COUNT = 120;
+const STAR_COUNT = 300;
 const STAR_SIZE = 1.2;
-const STAR_SPEED = 0.15;
+const STAR_SPEED_MIN = 0.5;
+const STAR_SPEED_MAX = 2.5;
+const STAR_ACCEL = 0.012; // acceleration per frame
 
 function randomBetween(a: number, b: number) {
   return a + Math.random() * (b - a);
 }
 
 type Star = {
-  x: number;
-  y: number;
-  z: number;
-  vx: number;
-  vy: number;
+  x: number; // current x
+  y: number; // current y
+  angle: number; // direction in radians
+  speed: number; // current speed
+  distance: number; // distance from center
+  z: number; // for size/brightness
 };
 
 export const AnimatedBackground: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const stars = useRef<Star[]>([]);
+  const center = useRef({ x: 0, y: 0 });
+
+  // Helper to respawn a star near the center
+  function respawnStar(width: number, height: number): Star {
+    const angle = randomBetween(0, 2 * Math.PI);
+    const distance = randomBetween(0, 20); // start close to center
+    const speed = randomBetween(STAR_SPEED_MIN, STAR_SPEED_MAX);
+    const z = randomBetween(0.5, 1.2);
+    return {
+      x: width / 2 + Math.cos(angle) * distance,
+      y: height / 2 + Math.sin(angle) * distance,
+      angle,
+      speed,
+      distance,
+      z,
+    };
+  }
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,13 +48,8 @@ export const AnimatedBackground: React.FC = () => {
         canvasRef.current.width = width;
         canvasRef.current.height = height;
       }
-      stars.current = Array.from({ length: STAR_COUNT }, () => ({
-        x: randomBetween(0, width),
-        y: randomBetween(0, height),
-        z: randomBetween(0.5, 1),
-        vx: randomBetween(-STAR_SPEED, STAR_SPEED),
-        vy: randomBetween(-STAR_SPEED, STAR_SPEED),
-      }));
+      center.current = { x: width / 2, y: height / 2 };
+      stars.current = Array.from({ length: STAR_COUNT }, () => respawnStar(width, height));
     };
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -48,17 +63,27 @@ export const AnimatedBackground: React.FC = () => {
       if (!ctx || !canvasRef.current) return;
       const width = canvasRef.current.width;
       const height = canvasRef.current.height;
+      const cx = center.current.x;
+      const cy = center.current.y;
 
       ctx.clearRect(0, 0, width, height);
 
-      for (let star of stars.current) {
-        star.x += star.vx * star.z;
-        star.y += star.vy * star.z;
+      for (let i = 0; i < stars.current.length; i++) {
+        let star = stars.current[i];
+        // Accelerate outward
+        star.speed += STAR_ACCEL * star.z;
+        star.distance += star.speed;
+        star.x = cx + Math.cos(star.angle) * star.distance;
+        star.y = cy + Math.sin(star.angle) * star.distance;
 
-        if (star.x < 0) star.x = width;
-        if (star.x > width) star.x = 0;
-        if (star.y < 0) star.y = height;
-        if (star.y > height) star.y = 0;
+        // If out of bounds, respawn
+        if (
+          star.x < 0 || star.x > width ||
+          star.y < 0 || star.y > height
+        ) {
+          stars.current[i] = respawnStar(width, height);
+          continue;
+        }
 
         ctx.save();
         ctx.globalAlpha = 0.7 + 0.3 * Math.sin(Date.now() / 500 + star.x);
