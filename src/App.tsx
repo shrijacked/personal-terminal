@@ -3,6 +3,7 @@ import { Terminal } from './components/Terminal';
 import { CommandLine } from './components/CommandLine';
 import { useTerminal } from './hooks/useTerminal';
 import { Monitor } from 'lucide-react';
+import { AnimatedBackground } from './components/AnimatedBackground';
 
 function App() {
   const {
@@ -26,7 +27,8 @@ function App() {
 
   return (
     <div className={`min-h-screen ${themes.bg} ${themes.text} flex items-center justify-center p-4 font-mono`}>
-      <div className="w-full max-w-5xl">
+      <AnimatedBackground />
+      <div className="w-full max-w-5xl" style={{ position: 'relative', zIndex: 1 }}>
         <div className="bg-gray-800 rounded-lg shadow-xl border border-gray-700 overflow-hidden">
           <div className="bg-gray-700 px-4 py-2 flex items-center justify-between">
             <div className="flex items-center space-x-2">
