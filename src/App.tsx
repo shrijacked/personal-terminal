@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Terminal } from './components/Terminal';
+// import { Terminal } from './components/Terminal';
 import { CommandLine } from './components/CommandLine';
 import { useTerminal } from './hooks/useTerminal';
 import { Monitor } from 'lucide-react';
