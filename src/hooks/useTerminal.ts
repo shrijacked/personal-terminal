@@ -163,11 +163,12 @@ export const useTerminal = () => {
   <p class="text-xl font-bold text-green-400">🛠 Technical Skills</p>
   <br/>
   <div class="space-y-4">
-    <p class="text-yellow-400">💻 Programming Languages: <span class="text-white">C/C++, Python, Rust, JavaScript, TypeScript</span></p>
-    <p class="text-yellow-400">📦 Frameworks & Libraries: <span class="text-white">React.js, Node.js, Express.js, Tailwind CSS, Seaborn, SciPy, Scikit-Learn, Pandas, OpenCV, NumPy, PyTorch, TensorFlow</span></p>
+    <p class="text-yellow-400">💻 Programming Languages: <span class="text-white">C/C++, Python, Rust, JavaScript, TypeScript, Cairo</span></p>
+    <p class="text-yellow-400">📦 Frameworks & Libraries: <span class="text-white">React.js, Express.js, Node.js, Seaborn, SciPy, Scikit-Learn, Pandas, OpenCV, NumPy, PyTorch, FastAPI</span></p>
     <p class="text-yellow-400">🗄️ Databases: <span class="text-white">MongoDB, SQL</span></p>
     <p class="text-yellow-400">⚙️ Tools & Technologies: <span class="text-white">HTML, Bash, MATLAB, UI/UX, Git/GitHub</span></p>
     <p class="text-yellow-400">🧠 Core Concepts: <span class="text-white">Data Structures & Algorithms, Linear Algebra, Probability, Statistics, Computational Optimization, AI/ML, Data Science</span></p>
+    <p class="text-yellow-400">🌐 Web3 Development & Blockchain Technologies: <span class="text-white">Solana Web3.js, Polkadot.js, Solidity</span></p>
   </div>
 </div>`
 ,
