@@ -28,7 +28,7 @@ export const useTerminal = () => {
     
     {
       name: "AudioMOS",
-      description: "AudioMOS is a cutting-edge platform for audio processing, enabling seamless Text-to-Speech (TTS), Speech-to-Text (STT), and Voice Cloning functionalities. Built on the Akash Network, it provides both API access and a web dashboard for real-time and batch audio processing. Features include multi-language support, real-time synthesis, accurate transcription, and high-fidelity voice cloning. Additionally, it offers advanced audio enhancement tools such as noise reduction and format conversion.",
+      description: "AudioMOS is a cutting-edge platform for audio processing, enabling seamless Text-to-Speech (TTS), Speech-to-Text (STT), Voice Cloning and Voice Cleaning functionalities. Built on the Akash Network, it provides both API access and a web dashboard for real-time and batch audio processing. Features include multi-language support, real-time synthesis, accurate transcription, and high-fidelity voice cloning. Additionally, it offers advanced audio enhancement tools such as noise reduction and format conversion.",
       tech: [
         "FastAPI", 
         "PyTorch",
@@ -41,6 +41,15 @@ export const useTerminal = () => {
         "Docker"
       ],
       link: "https://github.com/shrijacked/audiomos.git"
+    },
+    {
+      name: "ReefCast",
+      description: "ReefCast is a predictive modeling project that forecasts coral bleaching in India using localized environmental and ecological data.",
+      tech: [
+        "Python",
+        "TensorFlow",
+      ],
+      link: "https://github.com/shrijacked/Reefcast.git"
     },
     {
       name: "WatchDawg",
