@@ -133,23 +133,23 @@ export const useTerminal = () => {
       <br/><br/>
       <span class="text-yellow-400">about</span>      - Learn more about me
       <br/>
-      <span class="text-yellow-400">skills</span>     - View my technical skills
+      <span class="text-yellow-400">experience</span> - View my professional experience
       <br/>
       <span class="text-yellow-400">projects</span>   - Browse my projects
       <br/>
-      <span class="text-yellow-400">contact</span>    - Get my contact information
-      <br/>
-      <span class="text-yellow-400">education</span>  - View my educational background
+      <span class="text-yellow-400">skills</span>     - View my technical skills
       <br/>
       <span class="text-yellow-400">achievements</span> - View my certifications and awards
       <br/>
-      <span class="text-yellow-400">experience</span> - View my professional experience
+      <span class="text-yellow-400">education</span>  - View my educational background
+      <br/>
+      <span class="text-yellow-400">contact</span>    - Get my contact information
       <br/>
       <span class="text-yellow-400">theme</span>      - Change terminal theme
       <br/>
-      <span class="text-yellow-400">clear</span>      - Clear the terminal
-      <br/>
       <span class="text-yellow-400">date</span>       - Show current date and time
+      <br/>
+      <span class="text-yellow-400">clear</span>      - Clear the terminal
       <br/><br/>
       <span class="text-gray-400">Navigation:</span>
       <br/>
