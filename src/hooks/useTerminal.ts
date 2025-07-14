@@ -82,7 +82,7 @@ export const useTerminal = () => {
       ]
     },
     {
-      name: "NeuroNudge",
+      name: "NeuroNudge | Human-Technology Interaction (HTI) Lab, Plaksha University",
       description: "Developing a personalized Reinforcement Learning (RL) agent that processes real-time multimodal biometric data (EEG, ECG/HRV, gaze, posture) to learn and dynamically deploy adaptive interventions, thereby optimizing cognitive load management and enhancing productivity in digital work environments.",
       tech: []
     },
