@@ -5,6 +5,7 @@ import { useTerminal } from './hooks/useTerminal';
 import { Monitor } from 'lucide-react';
 import { AnimatedBackground } from './components/AnimatedBackground';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const {
@@ -91,6 +92,7 @@ function App() {
         </div>
       </div>
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
