@@ -143,6 +143,8 @@ export const useTerminal = () => {
       <br/>
       <span class="text-yellow-400">achievements</span> - View my certifications and awards
       <br/>
+      <span class="text-yellow-400">experience</span> - View my professional experience
+      <br/>
       <span class="text-yellow-400">theme</span>      - Change terminal theme
       <br/>
       <span class="text-yellow-400">clear</span>      - Clear the terminal
@@ -172,12 +174,12 @@ export const useTerminal = () => {
   <p class="text-xl font-bold text-green-400">🛠 Technical Skills</p>
   <br/>
   <div class="space-y-4">
-    <p class="text-yellow-400">💻 Programming Languages: <span class="text-white">C/C++, Python, Rust, JavaScript, TypeScript, Cairo</span></p>
-    <p class="text-yellow-400">📦 Frameworks & Libraries: <span class="text-white">React.js, Express.js, Node.js, Seaborn, SciPy, Scikit-Learn, Pandas, OpenCV, NumPy, PyTorch, FastAPI</span></p>
+    <p class="text-yellow-400">💻 Programming Languages: <span class="text-white">Python, C/C++, Rust, JavaScript, TypeScript, Cairo</span></p>
+    <p class="text-yellow-400">📦 Frameworks & Libraries: <span class="text-white">PyTorch, Pyspark, FastAPI, Pandas, Polars, NumPy, Scikit-Learn, React, Express, Node.js</span></p>
     <p class="text-yellow-400">🗄️ Databases: <span class="text-white">MongoDB, SQL</span></p>
-    <p class="text-yellow-400">⚙️ Tools & Technologies: <span class="text-white">HTML, Bash, MATLAB, UI/UX, Git/GitHub</span></p>
-    <p class="text-yellow-400">🧠 Core Concepts: <span class="text-white">Data Structures & Algorithms, Linear Algebra, Probability, Statistics, Computational Optimization, AI/ML, Data Science</span></p>
-    <p class="text-yellow-400">🌐 Web3 Development & Blockchain Technologies: <span class="text-white">Solana Web3.js, Polkadot.js, Solidity</span></p>
+    <p class="text-yellow-400">⚙️ Tools & Technologies: <span class="text-white">Microsoft Azure, Microsoft Fabric, Bash, MATLAB, UI/UX, Git/GitHub, Power BI</span></p>
+    <p class="text-yellow-400">🧠 Core Concepts: <span class="text-white">Algorithms, Statistics and Probability, Linear Algebra, Calculus</span></p>
+    <p class="text-yellow-400">🌐 Web3 Development & Blockchain Technologies: <span class="text-white">Polkadot.js, Solidity</span></p>
   </div>
 </div>`
 ,
@@ -201,30 +203,28 @@ export const useTerminal = () => {
       </div>`;
     },
 
-    // experience: () => `<div class="space-y-4">
-    //   <p class="text-xl font-bold text-green-400">💼 Work Experience</p>
-    //   <br/>
-    //   <div class="space-y-6">
-    //     <div>
-    //       <p class="text-yellow-400">Senior Full Stack Developer @ Tech Corp</p>
-    //       <p class="text-gray-400">2021 - Present</p>
-    //       <ul class="list-disc list-inside space-y-1 mt-2">
-    //         <li>Led development of microservices architecture</li>
-    //         <li>Improved system performance by 40%</li>
-    //         <li>Mentored junior developers</li>
-    //       </ul>
-    //     </div>
-    //     <div>
-    //       <p class="text-yellow-400">Frontend Developer @ StartupX</p>
-    //       <p class="text-gray-400">2019 - 2021</p>
-    //       <ul class="list-disc list-inside space-y-1 mt-2">
-    //         <li>Built responsive web applications</li>
-    //         <li>Implemented CI/CD pipelines</li>
-    //         <li>Reduced load times by 60%</li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </div>`,
+    experience: () => `<div class="space-y-4">
+      <p class="text-xl font-bold text-green-400">💼 Experience</p>
+      <div class="space-y-6">
+        <div>
+          <p class="text-yellow-400 font-semibold">Software Engineering / Machine Learning Intern | Vibracoustic</p>
+          <p class="text-gray-400">June 2025 - Present</p>
+          <ul class="list-disc list-inside space-y-1 mt-2">
+            <li>Engineered end-to-end Azure data pipelines to transform raw test logs into curated datasets, directly enabling AI-based predictions of component performance.</li>
+            <li>Developed and maintained interactive Power BI dashboards that translated complex test data into actionable KPIs, used by engineers to validate virtual simulation results.</li>
+            <li>Architected a scalable data lake foundation using a bronze-silver-gold model, ensuring data quality and governance for downstream analytics and AI applications.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-yellow-400 font-semibold">Research Associate | University of Missouri Trulaske College of Business</p>
+          <p class="text-gray-400">June 2025 - Present</p>
+          <ul class="list-disc list-inside space-y-1 mt-2">
+            <li>Working on a research project at the intersection of voice-based AI, behavioral responses, and algorithmic fairness within the financial services sector, utilizing proprietary data from Skit.ai. In this research position, I am working under the close guidance of Professor Anuj Kapoor from the University of Missouri and collaborating with faculty from the University of Notre Dame: Professor Joonhyuk Yang (PhD, Northwestern) and Professor Keyan Li (PhD, MIT).</li>
+            <li>Engineered and developed reproducible data pipelines to clean and process conversational data, conducting comprehensive exploratory data analysis (EDA), and implementing advanced statistical and machine learning models to extract insights and inform decision-making.</li>
+          </ul>
+        </div>
+      </div>
+    </div>`,
 
     education: () => `<div class="space-y-4">
       <p class="text-xl font-bold text-green-400">🎓 Education</p>
