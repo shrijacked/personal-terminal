@@ -4,6 +4,7 @@ import { CommandLine } from './components/CommandLine';
 import { useTerminal } from './hooks/useTerminal';
 import { Monitor } from 'lucide-react';
 import { AnimatedBackground } from './components/AnimatedBackground';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const {
@@ -89,6 +90,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
