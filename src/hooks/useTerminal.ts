@@ -28,7 +28,7 @@ export const useTerminal = () => {
     
     {
       name: "AudioMOS",
-      description: "AudioMOS is a cutting-edge platform for audio processing, enabling seamless Text-to-Speech (TTS), Speech-to-Text (STT), Voice Cloning and Voice Cleaning functionalities. Built on the Akash Network, it provides both API access and a web dashboard for real-time and batch audio processing. Features include multi-language support, real-time synthesis, accurate transcription, and high-fidelity voice cloning. Additionally, it offers advanced audio enhancement tools such as noise reduction and format conversion.",
+      description: "Architected and deployed AudioMOS, a comprehensive audio processing platform, on the decentralized Akash Network, leveraging a P100 GPU (16GB VRAM) for scalable backend ML model inference and Docker containerization for efficient resource utilization. Developed end-to-end functionality for Text-to-Speech (TTS), Speech-to-Text (STT), Voice Cloning, and Audio Enhancement (noise reduction), providing both robust API access and an intuitive React-based web dashboard for seamless user interaction. Implemented a high-performance Python/FastAPI backend integrated with PyTorch for ML model inference (e.g., Parler TTS, Whisper, DeepFilternet), managing API data with MongoDB, while building a responsive React/TypeScript frontend with Tailwind CSS to deliver a comprehensive audio processing solution.",
       tech: [
         "FastAPI", 
         "PyTorch",
@@ -44,7 +44,7 @@ export const useTerminal = () => {
     },
     {
       name: "ReefCast",
-      description: "ReefCast is a predictive modeling project that forecasts coral bleaching in India using localized environmental and ecological data.",
+      description: "Engineered an end-to-end data pipeline to ingest, preprocess, and harmonize multi-source environmental, climatic, and biological data (e.g., SST, pH, IOD, coral genera) , and applied advanced machine learning models, including LSTM, XGBoost, LightGBM, and Random Forest, on SMOTE-balanced, chronologically split time series datasets to predict coral bleaching events in Indian reef systems. Achieved superior predictive performance with an LSTM model (Recall: 0.909, F1-score: 0.465, ROC AUC: 0.9636) in forecasting coral bleaching, demonstrating the critical value of temporal modeling for capturing cumulative environmental stress and significantly enhancing proactive reef management capabilities in India.",
       tech: [
         "Python",
         "TensorFlow",
@@ -80,6 +80,11 @@ export const useTerminal = () => {
         "Mediapipe",
         "NumPy",
       ]
+    },
+    {
+      name: "NeuroNudge",
+      description: "Developing a personalized Reinforcement Learning (RL) agent that processes real-time multimodal biometric data (EEG, ECG/HRV, gaze, posture) to learn and dynamically deploy adaptive interventions, thereby optimizing cognitive load management and enhancing productivity in digital work environments.",
+      tech: []
     },
     
   ];
