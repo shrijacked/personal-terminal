@@ -59,6 +59,7 @@ Type commands into the terminal to interact with the application. Use the `help`
 - `contact` - Get contact information  
 - `education` - View educational background  
 - `achievements` - View certifications and awards  
+- `experience` - View professional experience  
 - `theme` - Change terminal theme  
 - `clear` - Clear the terminal  
 - `date` - Show current date and time  
