@@ -11,7 +11,7 @@ const DOT_SIZE = 1.2;
 const DOT_COLORS = ['#ff5252', '#40c057', '#228be6', '#fab005']; // red, green, blue, yellow
 
 // Shooting stars
-const SHOOTING_STAR_CHANCE = 0.04;
+const SHOOTING_STAR_CHANCE = 0.07;
 let shootingStars: {x:number, y:number, vx:number, vy:number, life:number}[] = [];
 
 function randomBetween(a: number, b: number) {
