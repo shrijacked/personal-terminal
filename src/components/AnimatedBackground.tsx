@@ -2,9 +2,9 @@ import React, { useRef, useEffect } from 'react';
 
 const STAR_COUNT = 300;
 const STAR_SIZE = 1.2;
-const STAR_SPEED_MIN = 0.5;
-const STAR_SPEED_MAX = 2.5;
-const STAR_ACCEL = 0.012; // acceleration per frame
+const STAR_SPEED_MIN = 1.5;
+const STAR_SPEED_MAX = 5.0;
+const STAR_ACCEL = 0.025; // acceleration per frame
 
 const DOT_COUNT = 700;
 const DOT_SIZE = 1.2;
