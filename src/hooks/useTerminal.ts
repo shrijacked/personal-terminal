@@ -146,6 +146,8 @@ export const useTerminal = () => {
       <br/>
       <span class="text-yellow-400">achievements</span> - View my certifications and awards
       <br/>
+      <span class="text-yellow-400">research</span>   - View my research publications
+      <br/>
       <span class="text-yellow-400">education</span>  - View my educational background
       <br/>
       <span class="text-yellow-400">contact</span>    - Get my contact information
@@ -252,10 +254,27 @@ export const useTerminal = () => {
       <p class="text-gray-400">Ping me to transform ‘What if?’ into ‘What’s next!’</p>
     </div>`,
 
+    research: () => `<div class="space-y-4">
+      <p class="text-xl font-bold text-green-400">📚 Research & Publications</p>
+      <br/>
+      <div class="space-y-6">
+        <div>
+          <p class="text-yellow-400">Accepted Papers</p>
+          <ul class="list-disc list-inside space-y-1 mt-2">
+            <li>
+              <span class="font-semibold">"Threads of Time: Blockchain as the Cryptographic Loom of Heritage Preservation and Artisan Trust"</span><br/>
+              <span class="text-gray-400">Co-authored with Ahnvi Singh Chauhan</span><br/>
+              <span class="text-gray-300">Accepted for poster presentation at Sangoshthi 2025, IICD Jaipur. Our work explores how blockchain can safeguard cultural heritage and empower artisans through transparent, sustainable, and innovation-driven frameworks.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>`,
+
     achievements: () => `<div class="space-y-4">
       <p class="text-xl font-bold text-green-400">🏆 Awards & Scholarships</p>
       <br/>
-      <div class="space-y-6">
+      <div class="space-y-4">
         <div>
           <p class="text-yellow-400">Awards</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
