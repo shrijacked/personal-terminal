@@ -216,8 +216,9 @@ export const useTerminal = () => {
           <p class="text-yellow-400 font-semibold">Research Associate | University of Missouri Trulaske College of Business</p>
           <p class="text-gray-400">June 2025 - Present</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li>Working on a research project at the intersection of voice-based AI, behavioral responses, and algorithmic fairness within the financial services sector, utilizing proprietary data from Skit.ai. In this research position, I am working under the close guidance of Professor Anuj Kapoor from the University of Missouri and collaborating with faculty from the University of Notre Dame: Professor Joonhyuk Yang (PhD, Northwestern) and Professor Keyan Li (PhD, MIT).</li>
-            <li>Engineered and developed reproducible data pipelines to clean and process conversational data, conducting comprehensive exploratory data analysis (EDA), and implementing advanced statistical and machine learning models to extract insights and inform decision-making.</li>
+            <li>Working on a research project at the intersection of voice-based AI, behavioral responses, and algorithmic fairness in the financial services sector, leveraging proprietary data from Skit.ai. Developing research-grade tooling for cohort extraction, ICS-style journeys, repayment/debt/channel analyses, and cross-client comparisons.</li>
+            <li>Engineered end-to-end, reproducible data pipelines to ingest, clean, localize, and analyze 24M+ interactions (chunked IO, ZIP→timezone, anomaly filters), producing client/state tables, weekly/monthly rollups, and export-ready datasets.</li>
+            <li>Built scalable EDA and compliance analytics (profiling, histograms/time-series/correlation, top-K categories; states rolling 7-day attempts/excess/violations), generating publication-quality plots and CSV/JSON reports.</li>
           </ul>
         </div>
       </div>
