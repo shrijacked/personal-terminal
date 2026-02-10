@@ -12,25 +12,31 @@ interface Project {
   link?: string;
 }
 
+const ABOUT_CONTENT = `<div class="space-y-4">
+      <p class="text-xl font-bold text-green-400">👋 Hello, World!</p>
+      <p>Hi, I’m Shrijak. Funny enough, I grew up dreaming of being a fighter pilot. But somewhere along the way, I swapped the cockpit for a different kind of frontier: one driven by curiosity, logic, and the untapped power of AI. I realized that understanding how knowledge is structured and expanded is the real key to pushing human potential forward. That intersection where abstract mathematics meets real-world impact—is exactly where I feel most at home.</p>
+      <p>Right now, I’m channeling that drive into two very different worlds. I’m building Personhood, an R&D company creating "AI people" with genuine volition. We’re developing Cady, a discovery platform where you can match with AI entities that possess persistent memory and their own lives - moving beyond standard chatbots to create digital beings with boundaries and evolving personalities. In parallel, I’m applying these principles as a Software Engineering / Machine Learning Intern at Vibracoustic, where I engineer predictive AI solutions and scalable data infrastructure.</p>
+      <p>Beyond the screen, I’m an athlete, a marathon runner, and an aspiring Ironman competitor - pushing limits is just part of who I am, both physically and intellectually. My strength as a programmer actually lies in intuitively spotting hidden patterns, a skill honed by a deep appreciation for the elegant logic found in nature - from the hexagonal perfection of a beehive, to the organized chaos of an ant colony. And amidst all that complexity, I find grounding in the smell of food cooking, a simple reminder that the best things in life are meant to be shared.</p>
+      <br/>
+    </div>`;
+
 export const useTerminal = () => {
   const [history, setHistory] = useState<string[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
   const [currentCommand, setCurrentCommand] = useState('');
   const [currentTheme, setCurrentTheme] = useState('classic');
   const [output, setOutput] = useState<OutputLine[]>([{
-    type: 'ascii',
-    content: `
-    Step into my digital realm. Type 'help' to launch the experience.
-    `
+    type: 'output',
+    content: ABOUT_CONTENT
   }]);
 
   const projects: Project[] = [
-    
+
     {
       name: "AudioMOS",
       description: "Architected and deployed AudioMOS, a comprehensive audio processing platform, on the decentralized Akash Network, leveraging a P100 GPU (16GB VRAM) for scalable backend ML model inference and Docker containerization for efficient resource utilization. Developed end-to-end functionality for Text-to-Speech (TTS), Speech-to-Text (STT), Voice Cloning, and Audio Enhancement (noise reduction), providing both robust API access and an intuitive React-based web dashboard for seamless user interaction. Implemented a high-performance Python/FastAPI backend integrated with PyTorch for ML model inference (e.g., Parler TTS, Whisper, DeepFilternet), managing API data with MongoDB, while building a responsive React/TypeScript frontend with Tailwind CSS to deliver a comprehensive audio processing solution.",
       tech: [
-        "FastAPI", 
+        "FastAPI",
         "PyTorch",
         "Docker",
         "MongoDB",
@@ -65,7 +71,7 @@ export const useTerminal = () => {
       name: "Shrijak's Terminal",
       description: "Web-based interactive terminal simulating a command-line interface to explore projects, skills, and achievements through text commands.",
       tech: [
-        "React", 
+        "React",
         "TypeScript",
         "Tailwind CSS",
         "JavaScript"
@@ -81,7 +87,7 @@ export const useTerminal = () => {
         "NumPy",
       ]
     },
-    
+
   ];
 
   const handleHistory = useCallback((direction: 'up' | 'down') => {
@@ -159,13 +165,7 @@ export const useTerminal = () => {
       <br/>
       `,
 
-      about: () => `<div class="space-y-4">
-      <p class="text-xl font-bold text-green-400">👋 Hello, World!</p>
-      <p>Hi, I’m Shrijak. Funny enough, I grew up dreaming of being a fighter pilot. But somewhere along the way, I swapped the cockpit for a different kind of frontier: one driven by curiosity, logic, and the untapped power of AI. I realized that understanding how knowledge is structured and expanded is the real key to pushing human potential forward. That intersection where abstract mathematics meets real-world impact—is exactly where I feel most at home.</p>
-      <p>Right now, I’m channeling that drive into two very different worlds. I’m building Personhood, an R&D company creating "AI people" with genuine volition. We’re developing Cady, a discovery platform where you can match with AI entities that possess persistent memory and their own lives - moving beyond standard chatbots to create digital beings with boundaries and evolving personalities. In parallel, I’m applying these principles as a Software Engineering / Machine Learning Intern at Vibracoustic, where I engineer predictive AI solutions and scalable data infrastructure.</p>
-      <p>Beyond the screen, I’m an athlete, a marathon runner, and an aspiring Ironman competitor - pushing limits is just part of who I am, both physically and intellectually. My strength as a programmer actually lies in intuitively spotting hidden patterns, a skill honed by a deep appreciation for the elegant logic found in nature - from the hexagonal perfection of a beehive, to the organized chaos of an ant colony. And amidst all that complexity, I find grounding in the smell of food cooking, a simple reminder that the best things in life are meant to be shared.</p>
-      <br/>
-    </div>`
+    about: () => ABOUT_CONTENT
     ,
 
     skills: () => `<div class="space-y-4">
@@ -180,7 +180,7 @@ export const useTerminal = () => {
     <p class="text-yellow-400">🌐 Web3 Development & Blockchain Technologies: <span class="text-white">Polkadot.js, Solidity</span></p>
   </div>
 </div>`
-,
+    ,
 
     projects: () => {
       const projectList = projects.map((project, index) => `
