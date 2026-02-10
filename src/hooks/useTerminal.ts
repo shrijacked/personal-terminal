@@ -205,6 +205,13 @@ export const useTerminal = () => {
       <p class="text-xl font-bold text-green-400">💼 Experience</p>
       <div class="space-y-6">
         <div>
+          <p class="text-yellow-400 font-semibold">Undergraduate Researcher, Human-Technology Interaction Lab</p>
+          <p class="text-gray-400">Jul 2025 - Present</p>
+          <ul class="list-disc list-inside space-y-1 mt-2">
+            <li>Currently working with Prof. Sandeep Manjana (PhD, McGill University) and Prof. Siddharth (PhD, UC San Diego) at the Human-Technology Interaction Lab, Plaksha University, on developing a human-in-the-loop framework that enables large language models (LLMs) to ground linguistic reasoning into continuous physical interaction with one-armed and multi-armed robots.</li>
+          </ul>
+        </div>
+        <div>
           <p class="text-yellow-400 font-semibold">Software Engineering / Machine Learning Intern | Vibracoustic</p>
           <p class="text-gray-400">June 2025 - Present</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
