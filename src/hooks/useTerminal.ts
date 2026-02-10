@@ -210,12 +210,12 @@ export const useTerminal = () => {
           <ul class="list-disc list-inside space-y-1 mt-2">
             <li>Engineered end-to-end Azure data pipelines to transform raw test logs into curated datasets, directly enabling AI-based predictions of component performance.</li>
             <li>Developed and maintained interactive Power BI dashboards that translated complex test data into actionable KPIs, used by engineers to validate virtual simulation results.</li>
-            <li>Architected a scalable data lake foundation using a bronze-silver-gold model, ensuring data quality and governance for downstream analytics and AI applications.</li>
+            <li>Architected a scalable data lake foundation using a bronze-silver-gold model, applying data science techniques to cut storage allocation to one-fifth while improving accuracy ensuring data quality and governance for downstream analytics and AI applications.</li>
           </ul>
         </div>
         <div>
           <p class="text-yellow-400 font-semibold">Research Associate | University of Missouri Trulaske College of Business</p>
-          <p class="text-gray-400">June 2025 - Present</p>
+          <p class="text-gray-400">June 2025 - Nov 2025</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
             <li>Working on a research project at the intersection of voice-based AI, behavioral responses, and algorithmic fairness in the financial services sector, leveraging proprietary data from Skit.ai. Developing research-grade tooling for cohort extraction, ICS-style journeys, repayment/debt/channel analyses, and cross-client comparisons.</li>
             <li>Engineered end-to-end, reproducible data pipelines to ingest, clean, localize, and analyze 24M+ interactions (chunked IO, ZIP→timezone, anomaly filters), producing client/state tables, weekly/monthly rollups, and export-ready datasets.</li>
